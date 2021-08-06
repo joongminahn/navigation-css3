@@ -1,0 +1,127 @@
+/* COMMON */
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;  
+}
+img {
+  display: block;
+  border-radius: 12px;   
+}
+a {
+  display: block;
+  width: 125px;
+  text-decoration: none;
+  color: #333;  
+}
+span.material-icons {
+  line-height: 80px;
+  font-size: 2em;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 80%;  
+  min-width: 800px;
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  /* background-color:aqua; */
+  position: relative;  
+}
+.container-nav {
+  background-color: cadetblue;
+  display: flex;
+  width: 100%;  
+  height: 80px;
+}
+.container-nav .main-menu {
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+  display: flex;
+ } 
+ .container-nav .main-menu .submenu {
+  width: calc(1250px/6);  
+  height: 100%;
+  background-color:#999;
+  text-align: center;
+  border: 2px solid #fff;
+  /* box-sizing: border-box; */
+  line-height: 80px;
+  cursor: pointer;  
+  font-weight:600;     
+  letter-spacing: 0.4em;
+ }
+ .container-nav .main-menu .submenu .container-li {
+   width: 100%;   
+   height: 658px;
+   /* background-color:darkturquoise; */
+   position: absolute;
+   left: 0;
+   top: 80px;   
+   visibility: hidden;   
+  }
+  .container-nav .main-menu .submenu:hover {
+    background-color:greenyellow;
+    transition: all .2s;
+  }
+  
+  .container-nav .main-menu .submenu:hover .container-li {
+    visibility: visible;    
+   }
+  .container-nav .main-menu .submenu .container-li .group-li {
+    width: 86%;
+    /* width: calc(1250px/6); */
+    background-color:deepskyblue;
+    position: absolute;
+    left: 100px;   
+    margin-top: 6px;    
+   }
+   
+   .container-nav .main-menu .submenu .container-li .group-li li{
+     width: 125px;
+     display: flex;     
+     background-color:ivory;      
+     border-bottom: 2px solid deepskyblue;    
+    }
+    .container-nav .main-menu .submenu .container-li .group-li .main-box {
+      width: 500px;
+      height: 500px;
+      background-color:gold;
+      position: absolute;
+      right:0;    
+      top: 0px;
+      bottom: 0px;
+      margin:auto 0px;
+      
+      border-radius: 12px;      
+    }
+    .container-nav .main-menu .submenu .container-li .group-li li:nth-child(2) {
+      
+     }
+    .container-nav .main-menu .submenu .container-li .group-li li:nth-child(4) a {
+      font-size: 12px;
+      letter-spacing:2px;
+      background-color: coral;
+     }
+  .container-nav .main-menu .submenu .container-li .group-li .box{
+    width: 500px;
+    height: 500px;
+    background-color:gold;
+    position: absolute;
+    right:0;    
+    top: 0px;
+    bottom: 0px;
+    margin:auto 0px;
+    border-radius: 12px;
+    visibility: hidden;    
+   }   
+    .container-nav .main-menu .submenu .container-li .group-li li:hover {
+      background-color:greenyellow;
+      transition: all .2s;
+    }
+   .container-nav .main-menu .submenu .container-li .group-li li:hover .box img{    
+    visibility: visible;    
+    }
+ 
